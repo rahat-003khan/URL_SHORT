@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef3f7;
+    color: #222;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 50px auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+    font-size: 40px;
+}
+
+header p {
+    color: #666;
+    font-size: 17px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 15px 0 8px;
+}
+
+label span {
+    font-weight: normal;
+    color: #777;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+form button {
+    width: 100%;
+    margin-top: 18px;
+    padding: 13px;
+    border: 0;
+    border-radius: 7px;
+    background: #1769aa;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    opacity: 0.9;
+}
+
+#message {
+    color: #c62828;
+    min-height: 20px;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 18px;
+    background: #f2f7fb;
+    border-radius: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+.short-box {
+    display: flex;
+    gap: 8px;
+}
+
+.short-box input {
+    flex: 1;
+}
+
+.short-box button,
+.stats button {
+    border: 0;
+    border-radius: 7px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.short-box button {
+    background: #333;
+    color: white;
+}
+
+#openBtn {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.stats {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.stats button {
+    background: #ddd;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+footer {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+}

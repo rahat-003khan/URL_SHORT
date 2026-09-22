@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>URL Shortener</h1>
+        <p>Turn long links into short, easy-to-share URLs.</p>
+    </header>
+
+    <section class="card">
+        <form id="shortenForm">
+
+            <label for="url">Long URL</label>
+            <input
+                id="url"
+                type="url"
+                placeholder="https://example.com/your/long/link"
+                required
+            >
+
+            <label for="alias">Custom Alias <span>(optional)</span></label>
+            <input
+                id="alias"
+                type="text"
+                placeholder="my-link"
+                maxlength="20"
+            >
+
+            <button type="submit">Shorten URL</button>
+        </form>
+
+        <p id="message"></p>
+
+        <div id="result" class="result hidden">
+            <h3>Your Short URL</h3>
+
+            <div class="short-box">
+                <input id="shortUrl" readonly>
+                <button id="copyBtn" type="button">Copy</button>
+            </div>
+
+            <a id="openBtn" target="_blank">Open Short URL</a>
+
+            <div class="stats">
+                <strong>Clicks:</strong>
+                <span id="clicks">0</span>
+                <button id="statsBtn" type="button">Refresh Stats</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>How it works</h2>
+
+        <ol>
+            <li>Enter a long URL.</li>
+            <li>Optionally enter a custom alias.</li>
+            <li>Click Shorten URL.</li>
+            <li>Share the generated short link.</li>
+            <li>Every visit increases the click count.</li>
+        </ol>
+    </section>
+
+    <footer>
+        <p>Built with Go + HTML + CSS + JavaScript</p>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
